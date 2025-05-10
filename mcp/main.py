@@ -6,6 +6,10 @@ from ai_agent.agent import AIAgent
 app = FastAPI()
 agent = AIAgent()
 
+@app.get("/")
+def read_root():
+    return {"message": "MCP Server is running. Use the /chat endpoint to interact."}
+
 class ChatInput(BaseModel):
     user_input: str
     model: str = None
