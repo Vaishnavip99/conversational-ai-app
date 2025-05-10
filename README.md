@@ -17,7 +17,7 @@ conversational-ai-app/
 ## Setup
 
 # Clone the repository: 
- git clone https://github.com/your-repo/conversational-ai-app.git
+ git clone https://github.com/Vaishnavip99/conversational-ai-app.git
 run on terminal: cd conversational-ai-app
 
 # Create a Python virtual environment:
