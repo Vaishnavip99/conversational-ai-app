@@ -1,22 +1,29 @@
 # conversational-ai-app
 conversational-ai-app/
 ├── mcp_server/
+│   ├── main.py
+│   ├── config.py
+│   └── llm_manager.py
+├── ai_agent/
+│   └── agent.py
 ├── frontend/
-├── llm_providers/
-├── agent/
+│   └── app.py
 ├── .env
+├── requirements.txt
+└── README.md
 
 # Conversational AI Application
 
 ## Setup
 
-# Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/conversational-ai-app.git
-   cd conversational-ai-app
+# Clone the repository: 
+ git clone https://github.com/your-repo/conversational-ai-app.git
+run on terminal: cd conversational-ai-app
 
 # Create a Python virtual environment:
-python -m venv venv && source venv/bin/activate  # or venv\Scripts\activate on Windows
+python -m venv venv && source venv/bin/activate
+ # or for Windows
+.\venv\Scripts\Activate
 
 #Install initial dependencies:
 pip install fastapi uvicorn gradio openai python-dotenv
@@ -36,7 +43,7 @@ ACTIVE_LLM=openai  # Switch between 'openai', 'gemini', or 'claude'
 
 #Run the FastAPI server:
 
-uvicorn mcp_server.server:app --reload
+uvicorn mcp_server.main:app --reload
 
 #Run the Gradio frontend:
 
